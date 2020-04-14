@@ -50,8 +50,9 @@ Commands to install trbomultitool.sh
 Alias = Name of your MN, Must all be in lower case with no spaces or special characters
 
 MN key = get this from your control wallets console using the command 
-createmasternodekey
-note this and enter carefully
+
+`createmasternodekey`
+ **Please enter this very carefully**
 
 Port = Default port is 9533 
 
@@ -63,9 +64,10 @@ Swap space only needs to be set up once per server.
 To run multiple MN's on one server sharing the same IP on the VPS side you will need to enter a unique Alias, MN key, port and rpc port each time you run trbomultitool.sh.
 When setting up your masternode.conf file in your control wallet you will always need to set the port number you selected.
 
-Check.sh instructions 
+check.sh instructions 
 
 Updated check.sh file for new commands if you are using an older version of this script
+
 `wget https://raw.githubusercontent.com/TRBO-Coin/Masternode/master/check.sh`
 
 `chmod +x check.sh`
