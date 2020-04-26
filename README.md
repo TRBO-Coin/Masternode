@@ -1,39 +1,3 @@
-# MN-Setup Guide ( Single MN ) (Follow below Steps):
-
-
-`wget -q https://raw.githubusercontent.com/TRBO-Coin/Masternode/master/TRBO-mn.sh`
-
-
-`sudo chmod +x TRBO-mn.sh`
-
-
-`./TRBO-mn.sh`
-
-
-When prompted to Enter your TRBO Masternode GEN Key.
-
-Paste your Masternode GEN Key and press enter
-
-
-Wait till Node is fully Synced with blockchain.
-For check enter below command.
-
-`trbo-cli getinfo`
-
-
-When Node Fully Synced enter below command for check masternode status.
-
-`trbo-cli masternode status`
-
-# Guide for Update_Masternode.sh ( Single MN ):
-
-`wget -q https://raw.githubusercontent.com/TRBO-Coin/Masternode/master/Update_Masternode.sh`
-
-`sudo chmod +x Update_Masternode.sh`
-
-`./Update_Masternode.sh`
-
-
 # Guide for Multi MN
 
 TRBO Multi Tool script tested on Linux 16.04
