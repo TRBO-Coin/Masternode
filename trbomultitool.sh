@@ -6,7 +6,7 @@ coinnamed=trbod
 coinnamecli=trbo-cli
 ticker=TRBO
 coindir=trbo
-binaries='https://github.com/TRBO-Coin/Wallet/releases/download/V1.1/LinuxUbuntu16Daemon_v1.1.zip'
+binaries='https://github.com/TRBO-Coin/Wallet/releases/download/V1.1/TRBO_linux_1.1.zip'
 snapshot='https://github.com/TRBO-Coin/Wallet/releases/download/V1.1/bootstrap.zip'
 port=9533
 rpcport=9822
@@ -88,10 +88,6 @@ case $start in
     #Install Contabo dependancies
     apt -y install ufw
     apt -y install software-properties-common
-	apt-add-repository -y ppa:bitcoin/bitcoin >/dev/null 2>&1
-	apt -y install libdb4.8-dev libdb4.8++-dev
-	apt -y install libminiupnpc-dev
-	apt -y install libzmq3-dev
     apt -y install nano
     #Create swap file
     dd if=/dev/zero of=/var/swapfile bs=2048 count=4194304
