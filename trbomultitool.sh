@@ -534,7 +534,7 @@ echo -e '\e[4mPlease note that if you are installing multiple MNs you will need 
 echo "Wait for sync and then use $alias getinfo or $alias getmasternodestatus to check node"
 echo -e '\e[4mEnter the information below into your masternode.conf file in control wallet with the addition of the collateral_output_txid and TX index\e[24m'
 echo "$alias $ipadd:$port $key"
-echo -e '\e[4mYou must use the default port with your control/desktop wallets masternode.conf file'
+echo -e '\e[4mYou must use this port:$port with your control/desktop wallets masternode.conf file'
 echo -e '\e[4mThen save masternode.conf, restart your control wallet and start your new '$ticker' MasterNode\e[24m'
 echo ""
 echo "For more information or support please visit the $ticker masternode-support channel on Discord"
