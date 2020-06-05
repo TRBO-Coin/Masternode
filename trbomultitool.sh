@@ -1,17 +1,17 @@
 #!/bin/bash
 #Coin info #update here#
-version='1.1.0.0'
+version='1.2.0.0'
 coinname=trbo
 coinnamed=trbod
 coinnamecli=trbo-cli
 ticker=TRBO
 coindir=trbo
-binaries='https://github.com/TRBO-Coin/Wallet/releases/download/V1.1/TRBO_linux_1.1.zip'
-snapshot='https://github.com/TRBO-Coin/Wallet/releases/download/V1.1/bootstrap.zip'
+binaries='https://github.com/TRBO-Coin/Wallet/releases/download/V1.2/TRBO_linux_1.2.zip'
+snapshot='https://github.com/TRBO-Coin/Wallet/releases/download/V1.2/bootstrap.zip'
 port=9533
 rpcport=9822
-currentVersion=1010000
-currentProto=70009
+currentVersion=1020000
+currentProto=70010
 discord='https://discord.gg/TF9KYXN'
 
 apt-get install pwgen -y &>/dev/null
@@ -36,7 +36,7 @@ cat << "EOF"
 EOF
 
 #Tool menu
-echo -e '\e[4mWelcome to the TRBO Multitools\e[24m'
+echo -e '\e[4mWelcome to the TRBO Multitool\e[24m'
 echo "Please enter a number from the list and press [ENTER] to start tool"
 echo "1  - Newserver 2GB swap. REQUIRES RESTART"
 echo "2  - Newserver 8GB swap with Contabo support. REQUIRES RESTART"
@@ -158,7 +158,8 @@ case $start in
     echo -e "${GREEN}$alias masternode status"
     echo -e "${NC}"
     echo "----------------"
-    echo "If you are running multiple $ticker MNs you will need to update the other nodes too!"    
+    echo "If you are running multiple $ticker MNs you will need to update the other nodes too!"
+    echo "Please Repair your blockchain by using this tool and selecting ${GREEN}4 - Repair"    
     echo "----------------"
     exit
     ;;
@@ -232,8 +233,9 @@ case $start in
     echo -e "${GREEN}DONE${NC}"
     echo "============================================"
     echo ""
-    echo -e "${RED}Please restart now your MN(s) from your controller wallet!!!${NC}"
+    echo -e "${RED}Please restart now your MN(s) from your controller wallet after repairing your blockchain!!!${NC}"
     echo -e "When done and protocol ${currentProto} is displayed, restart the masternode with tool ${GREEN}7 - Masternode restart${NC}"
+    echo "Please Repair your blockchain by using this tool and selecting ${GREEN}41 - Repair"
     exit
     ;;
     4) echo "Starting chain repair tool"
