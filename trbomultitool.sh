@@ -235,7 +235,7 @@ case $start in
     echo ""
     echo -e "${RED}Please restart now your MN(s) from your controller wallet after repairing your blockchain!!!${NC}"
     echo -e "When done and protocol ${currentProto} is displayed, restart the masternode with tool ${GREEN}7 - Masternode restart${NC}"
-    echo "Please Repair your blockchain by using this tool and selecting ${GREEN}41 - Repair"
+    echo "Please Repair your blockchain by using this tool and selecting ${GREEN}41 - Repair${NC}"
     exit
     ;;
     4) echo "Starting chain repair tool"
