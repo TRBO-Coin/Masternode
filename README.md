@@ -3,7 +3,7 @@
 TRBO Multi Tool script tested on Linux 16.04
 
 
-Commands to install trbomultitool.sh
+**Commands to install trbomultitool.sh**
 
 `wget https://raw.githubusercontent.com/TRBO-Coin/Masternode/master/trbomultitool.sh`
 
@@ -21,6 +21,16 @@ MN key = get this from your control wallets console using the command
 Port = Default port is 9533 
 
 RPCport = Default RPCport is 9822
+
+**Commands to update trbomultitool.sh on new wallet release**
+
+`rm -rf trbomultitool.sh`
+
+`wget https://raw.githubusercontent.com/TRBO-Coin/Masternode/master/trbomultitool.sh`
+
+`chmod +x trbomultitool.sh`
+
+`./trbomultitool.sh`
 
 MultiNode note
 
